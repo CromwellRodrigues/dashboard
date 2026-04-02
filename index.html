@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2af1baf378.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="min-h-screen w-full">
+
+        <!-- left menu aside -->
+        <div class="flex">
+
+            <aside class="min-h-screen hidden md:block md:w-2/12 bg-gradient-to-br from-blue-600 via-sky-800 to-teal-500 shadow-b-xl shadow-slate-900/50">
+
+                <div  class="flex items-center gap-4 p-4 mb-4">
+
+                    <i class="fa-regular fa-gem text-2xl text-white"></i>
+                    <li class = "text-white text-2xl">
+                        <a href="#">Dashboard</a>
+                    </li>
+                </div>
+
+                <nav>
+                    <ul class="flex  flex-col align-items  text-white font-semibold text-md">
+
+                        <li class="flex px-6 py-2 gap-4 items-center ">
+                            <i class="fa-solid fa-house"></i>
+                            <a href="#" >Home</a>
+
+                        </li>
+                       
+
+
+                        <li class="flex px-6 py-2 gap-4 items-center ">
+                            <i class="fa-regular fa-user"></i>
+                            <a href="#" >Profile</a>
+                        </li>
+
+                           <li class="flex px-6 py-2 gap-4 items-center ">
+                           <i class="fa-regular fa-message"></i>
+                            <a href="#" >Messages</a>
+                        </li>
+
+
+                        <li class="flex px-6 py-2 gap-4 items-center ">
+                            <i class="fa-regular fa-clock"></i>
+                            <a href="#" >History</a>
+                        </li>
+
+                         <li class="flex px-6 py-2 gap-4 items-center ">
+                          <i class="fa-regular fa-pen-to-square"></i>
+                            <a href="#" >Tasks</a>
+                        </li>
+
+
+                        <li class="flex px-6 py-2 gap-4 items-center ">
+                          <i class="fa-solid fa-users"></i>
+                            <a href="#" >Communities</a>
+                        </li>
+
+
+                        <li class="flex px-6 py-2 mt-6 gap-4 items-center ">
+                            <i class="fa-solid fa-gear"></i>
+                            <a href="#" >Settings</a>
+                        </li>
+
+
+                        <li class="flex px-6 py-2  gap-4 items-center ">
+                         <i class="fa-regular fa-circle-question"></i>
+                            <a href="#" >Support</a>
+                        </li>
+
+                        <li class="flex px-6 py-2  gap-4 items-center ">
+                            <i class="fa-solid fa-shield"></i>
+                            <a href="#" >Privacy</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </aside>
+
+
+            <div class="flex flex-col w-full md:w-10/12">
+
+                <!-- top nav -->
+                <div class="w-full h-[160px] bg-gradient-to-br from-sky-200 via-sky-100 to-teal-50">
+
+
+                    <div class="flex flex-1 flex-row justify-around gap-4 bg-white/90 p-4">
+                    
+                        <div class= "flex flex-1 flex-row justify-center  gap-2"> 
+                            <i class="fa-solid fa-magnifying-glass p-2"></i>
+                            <input type= "text" 
+                            placeholder="Search"
+                            class="rounded-full bg-slate-200 w-full text-slate-900 p-2 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent"
+                            />
+                        </div>
+
+                        <div class="flex flex-1 flex-row justify-center items-center">
+                            <i class="fa-regular fa-bell p-2 mr-6"></i>
+
+                            <div class = "flex items-center gap-2">
+                                <i class="fa-solid fa-horse-head p-2 bg-amber-700 text-white p-2 rounded-full"></i>
+                                <p>Kevin Anderson</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                        <div class="flex  ">
+
+                            <div class="flex flex-1 flex-row gap-4 items-center p-4">
+
+                                <div class="flex items-center gap-2 p-2 w-16 h-16 rounded-full flex  justify-center bg-gradient-to-br from-amber-900 to-amber-700">
+                                    <i class="fa-solid fa-horse-head  text-white  text-3xl "></i>
+                                </div>
+
+
+                                <div class="flex flex-col">
+                                    <h4 class="text-xs">Hi there,</h4>
+                                    <div class="">
+                                        <h2 class="text-bold">Kevin Anderson (@kevin)</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="flex flex-1 flex-row gap-4 items-center p-4">
+
+                                <button class="bg-gradient-to-br bg-sky-700 via-sky-900 to-sky-800 text-white px-12 py-4 rounded-full">New</button>
+
+                                <button class="bg-gradient-to-br bg-sky-700 via-sky-900 to-sky-800 text-white px-12 py-4 rounded-full">Upload</button>
+
+                                <button class="bg-gradient-to-br bg-sky-700 via-sky-900 to-sky-800 text-white px-12 py-4 rounded-full">Share</button>
+
+                            </div>
+
+
+                        </div>
+
+                    <div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- body project  -->
+
+                <div class="flex flex-col md:flex-row p-4 md:p-8 gap-6">
+
+                    <div class="bg-white/80 w-full md:w-8/10 gap-4">
+                        
+                        <h2 class="font-bold text-2xl">Your Projects</h2>
+
+                        <!-- project cards -->
+                        <div class=" grid grid-cols-1 md:grid-cols-2 gap-4 py-4 rounded-lg shadow-lg">
+
+                            <div class="bg-rose-50 p-4  border-l-4 border-rose-600 shadow-2xl rounded">
+                                <h3 class="font-bold text-l">Project Marshmallow</h3>
+                                <p class="text-sm mb-4">Marshmallow  jujubes. Topping chocolate cake wafer. Chocolate bar sweet roll candy canes.</p>
+
+                                <div class="flex justify-end gap-4 text-sm text-slate-500">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            
+
+                            </div>
+
+
+                             <div class="bg-rose-50 p-4  border-l-4 border-rose-600 shadow-2xl rounded">
+                                <h3 class="font-bold text-l">Project Easter Egg</h3>
+                                <p class="text-sm mb-4">Easter Eggs are fun to create! You can make them in various sizes and colors. Bugs Bunny  loves to eat them, and they are often hidden in gardens for children to find during Easter celebrations.
+
+                                </p>
+
+                                <div class="flex justify-end gap-4 text-sm text-slate-500">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            
+
+                            </div>
+
+                            
+                             <div class="bg-rose-50 p-4  border-l-4 border-rose-600 shadow-2xl rounded">
+                                <h3 class="font-bold text-l">Project Sphinx</h3>
+                                <p class="text-sm mb-4">The Sphinx is a mythical creature with the body of a lion and the head of a human. It is often associated with ancient Egyptian culture and is known for its enigmatic riddles and mysterious presence. 
+
+                                </p>
+
+                                <div class="flex justify-end gap-4 text-sm text-slate-500">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            
+
+                            </div>
+
+
+                            <div class="bg-rose-50 p-4  border-l-4 border-rose-600 shadow-2xl rounded">
+                                <h3 class="font-bold text-l">Project Galapagos</h3>
+                                <p class="text-sm mb-4">The Galápagos Islands are a volcanic archipelago in the Pacific Ocean, known for their unique biodiversity and as the inspiration for Charles Darwin's theory of evolution. The islands are home to a variety of endemic species, including giant tortoises, marine iguanas, and blue-footed boobies. 
+
+                                </p>
+
+                                <div class="flex justify-end gap-4 text-sm text-slate-500">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            
+
+                            </div>
+
+
+                            <div class="bg-rose-50 p-4  border-l-4 border-rose-600 shadow-2xl rounded">
+                                <h3 class="font-bold text-l">Project Shaun The Sheep</h3>
+                                <p class="text-sm mb-4">Shaun the Sheep is a popular British stop-motion animated television series created by Aardman Animations. The show follows the adventures of Shaun, a clever and mischievous sheep, and his friends on a farm. The series is known for its humor, charming characters, and creative storytelling, making it a favorite among children and adults alike.
+
+                                </p>
+
+                                <div class="flex justify-end gap-4 text-sm text-slate-500">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            
+
+                            </div>
+
+
+                             <div class="bg-rose-50 p-4  border-l-4 border-rose-600 shadow-2xl rounded">
+                                <h3 class="font-bold text-l">Project Tulip</h3>
+                                <p class="text-sm mb-4">Tulips are beautiful flowering plants that come in a variety of colors and shapes. They are often associated with spring and are popular in gardens and floral arrangements. Tulips have a rich history and are native to Central Asia, but they have become widely cultivated around the world for their vibrant blooms.
+
+                                </p>
+
+                                <div class="flex justify-end gap-4 text-sm text-slate-500">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- right section -->
+                    <div class="bg-green-50 w-full md:w-2/10">
+                       
+                        <!-- announcement section -->
+                        <h2 class="font-bold text-xl mb-4">Announcements</h2>
+
+                        <div class="bg-sky-100 p-4 rounded-lg shadow-lg mb-4">
+
+                            <h3 class="text-l font-bold text-slate-700 ">Paddington Bear</h3>
+                            <p class="text-sm text-slate-500 mb-2">New Paddington Bear exhibit opening at the museum next month!</p>
+
+                            <hr/>
+
+                            <h3 class="text-l font-bold text-slate-700 ">Mr. Bean</h3>
+                            <p class="text-sm text-slate-500 mb-2">Mr. Bean's comedy show coming to town this summer!</p>
+
+                            <hr/>
+
+                            <h3 class="text-l font-bold text-slate-700 ">Harry Potter</h3>
+                            <p class="text-sm text-slate-500 mb-2">Exciting new Harry Potter film coming to theaters!</p>
+
+                        </div>
+
+                        <!-- trending section -->
+                         <h2 class="font-bold text-xl mb-4">Trending</h2>
+
+                         <div class="bg-teal-50 p-4 rounded-lg shadow-lg mb-4">
+
+                            <div class="flex items-center gap-4 mb-4">
+                                <i class="fa-solid fa-cat  font-2xl"></i>
+
+                                <div class="flex flex-col">
+                                <h3 class="text-l font-bold text-slate-700 ">@grumpy</h3>
+                                <p class="text-sm text-slate-500">Grumpy Cat</p>
+                                </div>
+                            </div>
+
+                            
+                            <div class="flex items-center gap-4 mb-4">
+                            <i class="fa-solid fa-crow font-2xl"></i>
+
+                                <div class="flex flex-col">
+                                <h3 class="text-l font-bold text-slate-700 ">@angry</h3>
+                                <p class="text-sm text-slate-500">Angry Bird</p>
+                                </div>
+                            </div>
+
+
+                             <div class="flex items-center gap-4 mb-4">
+                            <i class="fa-solid fa-dog font-2xl"></i>
+ 
+                                <div class="flex flex-col">
+                                <h3 class="text-l font-bold text-slate-700 ">@happy</h3>
+                                <p class="text-sm text-slate-500">Happy Dog</p>
+                                </div>
+                            </div>
+
+
+                            <div class="flex items-center gap-4 mb-4">
+                           <i class="fa-solid fa-frog fontxl"></i>
+ 
+                                <div class="flex flex-col">
+                                <h3 class="text-l font-bold text-slate-700 ">@crazy</h3>
+                                <p class="text-sm text-slate-500">Crazy Frog</p>
+                                </div>
+                            </div>
+                            
+
+                         </div>
+
+
+                    </div>
+
+                </div>  
+
+            </div>
+
+
+           
+
+
+        </div>
+    </div>
+</body>
+</html>
